@@ -30,7 +30,7 @@ public class FindAllAnagramsInAString {
         List<Integer> output1 = findAnagrams("cbaebabacd", "abc");
         System.out.println("output1: "+ output1);
 
-        List<Integer> output2 = findAnagrams("ababcsxx ", "ab");
+        List<Integer> output2 = findAnagrams("abab", "ab");
         System.out.println("output2: "+ output2);
     }
 
@@ -44,6 +44,7 @@ public class FindAllAnagramsInAString {
 
         List<Integer> outputList = new ArrayList<>();
         for (int i = 0; i < sLength; i++) {
+            System.out.println(s.charAt(i));
             index[s.charAt(i) - 'a']--;
             int total = i - pLength;
             if (total >= 0) {
