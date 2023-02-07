@@ -27,13 +27,13 @@ public class ShuffleTheArray {
 
     public static void main(String[] args) {
         int[] output1 = shuffle(new int[]{2,5,1,3,4,7}, 3);
-        System.out.println(output1);
+        System.out.println(Arrays.toString(output1));
 
         int[] output2 = shuffle(new int[]{1,2,3,4,4,3,2,1}, 4);
-        System.out.println(output2);
+        System.out.println(Arrays.toString(output2));
 
         int[] output3 = shuffle(new int[]{1,1,2,2}, 2);
-        System.out.println(output3);
+        System.out.println(Arrays.toString(output3));
     }
 
     public static int[] shuffle(int[] nums, int n) {

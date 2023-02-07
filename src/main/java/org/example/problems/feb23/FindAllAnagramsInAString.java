@@ -1,6 +1,7 @@
 package org.example.problems.feb23;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -41,10 +42,9 @@ public class FindAllAnagramsInAString {
         for (int i = 0; i < pLength; i++) {
             index[p.charAt(i) - 'a']++;
         }
-
+        System.out.println(Arrays.toString(index));
         List<Integer> outputList = new ArrayList<>();
         for (int i = 0; i < sLength; i++) {
-            System.out.println(s.charAt(i));
             index[s.charAt(i) - 'a']--;
             int total = i - pLength;
             if (total >= 0) {
